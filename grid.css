@@ -15,6 +15,7 @@
   height: 530.77px;
   left: 718px;
   top: 33px;
+  z-index: -1;
 }
 .wrapper {
   font-family: "Roboto";
@@ -402,6 +403,75 @@ h2 {
   font-size: 16px;
   line-height: 19px;
 }
+.what {
+  display: block;
+  width: 1020px;
+  margin: 0 auto
+}
+.what-title {
+  text-align: center;
+  height: 40px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  margin-top: 80px;
+  margin-bottom: 25px;
+}
+.what-circle {
+  display: flex;
+  justify-content: center;
+}
+.what-zub {
+  margin-top: 25px;
+}
+.what-card {
+  margin-top: 25px;
+}
+.what-card-left {
+  text-align: right;
+}
+.what-card-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  color: #46B1DE;
+  margin-top: 25px;
+}
+.what-card-text {
+  width: 100%;
+  height: 80px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.what-card-left-two {
+  margin-right: 50px;
+}
+.what-card-right-two {
+  margin-left: 50px;
+}
+.attention {
+  display: flex;
+  justify-content: center;
+  margin-top: 59px;
+}
+.attention-text {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #46B1DE;
+}
 .border {
   box-sizing: border-box;
   width: 845px;
@@ -688,12 +758,30 @@ h5 {
   align-items: center;
 }
 .footer-copiright {
+  box-sizing: border-box;
   text-align: right;
   color: whitesmoke;
-  margin-bottom: 15px;
+  padding: 70px 0;
+  display: flex;
+  justify-content: end;
+}
+.copiright-border {
+  box-sizing: border-box;
+  width: 15px;
+  height: 15px;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+.copiright-border-c {
+  display: block;
+  margin: -35% 25%;
+  font-size: 16px;
 }
 @media  screen and (max-width: 991px) {
-  .menu, .headerr-content-menu-lang, .cards, .picter, .footer-contacts-viber {
+  .menu, .headerr-content-menu-lang, .cards, .footer-contacts-viber {
     display: none;
   }
   .first-screen {
@@ -722,22 +810,32 @@ h5 {
   header {
    width: 100%;
    height: 100%;
+   justify-content: space-between;
   }
   .header-logo {
-    width: 45%;
+    width: 55%;
     height: 150px;
+  }
+  .header-logo-img {
+    transform: scale(1.5);
+    margin-top: 17px;
+    margin-right: 20px;
   }
   .header-logo-text {
     width: 100%;
-    font-size: 47px;
-    margin-top: -11px;
+    font-size: 60px;
+    margin-top: -15px;
     margin-left: 5px;
   }
   .header-logo-text_title {
     font-size: 42px;
   }
   .xz {
-    width: 40%;
+    width: 41%;
+  }
+  .xz-img {
+    transform: scale(2.5);
+    margin-right: 20px;
   }
   .header-phone {
     font-size: 50px;
@@ -777,7 +875,7 @@ h5 {
   .why-body {
     display: block;
     width: 100%;
-    height: 58%;
+    height: 28%;
   }
   .why-body-row {
     flex-direction: row;
@@ -810,6 +908,72 @@ h5 {
   .why-body-card-content {
     font-size: 40px;
     line-height: 120%;
+  }
+  .what {
+    display: block;
+    width: 100%;
+  }
+  .what-title {
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .what-circle {
+    display: block;
+  }
+  .what-zub {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    transform: scale(1.5);
+    margin-top: 12%;
+    margin-bottom: 7%;
+  }
+  .what-card {
+    margin-top: 25px;
+  }
+  .what-card-left {
+    text-align: left;
+  }
+  .what-card-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 45px;
+    line-height: 140%;
+    color: #46B1DE;
+    margin-top: 25px;
+  }
+  .what-card-text {
+    width: 100%;
+    height: 100%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 140%;
+  }
+  .what-card-left-two {
+    margin-right: 50px;
+  }
+  .what-card-right-two {
+    margin-left: 0px;
+  }
+  .attention {
+    display: flex;
+    justify-content: center;
+    margin-top: 59px;
+  }
+  .attention-text {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 140%;
+    color: #46B1DE;
   }
   .border {
     width: 100%;
@@ -850,6 +1014,10 @@ h5 {
   button {
     width: 280px;
     font-size: 30px;
+  }
+  .picter {
+    width: 100%;
+    margin: 95px auto;
   }
   .footer {
     width: 100%;
@@ -917,6 +1085,7 @@ h5 {
     margin-top: 15%;
     font-size: 75px;
     text-align: left;
+    margin-bottom: 15%;
   }
   .footer-contacts-img {
     width: 28px;
@@ -929,7 +1098,15 @@ h5 {
     color: whitesmoke;
   }
   .xz-logo {
-    margin-top: 0px;
+    margin-top: -20px;
+    transform: scale(3);
+    margin-right: 10%;
+  }
+  .xz-footer {
+    margin-top: 20px;
+  }
+  .New-York {
+    margin-bottom: 10%;
   }
   .footer-copiright {
     box-sizing: border-box;
@@ -937,5 +1114,22 @@ h5 {
     color: whitesmoke;
     font-size: 45px;
     padding: 70px 0;
+    display: flex;
+    justify-content: end;
+  }
+  .copiright-border {
+    box-sizing: border-box;
+    width: 33px;
+    height: 33px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 1%;
+  }
+  .copiright-border-c {
+    display: block;
+    margin: -22% 15%;
+    font-size: 30px;
   }
 }
