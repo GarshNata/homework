@@ -1582,6 +1582,7 @@ h5 {
   }
   .footer-logo-img {
     margin-right: 50px;
+    transform: scale(2);
   }
   .footer-logo-text {
     color: rgb(27, 30, 49);

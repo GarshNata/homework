@@ -1526,6 +1526,7 @@ button {
   }
   .footer-logo-img {
     margin-right: 50px;
+    transform: scale(2);
   }
   .footer-logo-text {
     color: #1b1e31;
