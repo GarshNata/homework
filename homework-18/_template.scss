@@ -1,0 +1,24 @@
+$mainColor: #46b1de;
+$mainColorTwo: white;
+%title{
+  font-family: 'Roboto';
+  font-style: normal;
+}
+@mixin triangle($width, $color){
+  width: 0;
+  height: 0;
+  border-left: $width/2 solid transparent;
+  border-right: $width/2 solid transparent;
+  border-top: $width/2 solid $color;
+}
+%sectionMargin {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+@media  screen and (max-width: 991px) {
+  %sectionMargin {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

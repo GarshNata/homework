@@ -1,14 +1,7 @@
-$mainColor: #46b1de;
-$mainColorTwo: white;
-%title{
-  font-family: 'Roboto';
-  font-style: normal;
-}
-%sectionMargin{
-  margin-top: 90px;
-}
-%sectionMarginTwo{
-  margin-top: 30px;
+@import '_template';
+
+.triangle{
+  @include triangle(50px, $mainColor);
 }
 .first-screen {
     background-image: url(../../figma-picter/Rectangle1.png);
@@ -24,7 +17,7 @@ $mainColorTwo: white;
 .image {
     position: absolute;
     width: 572px;
-    height: 530.77px;
+    height: 530.77px; 
     left: 718px;
     top: 33px;
     z-index: -1;
@@ -801,7 +794,7 @@ button {
     border-radius: 8px;
 }
 .footer {
-  @extend %sectionMargin;
+    @extend %sectionMargin;
     padding: 0 20px;
     width: auto;
     background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
