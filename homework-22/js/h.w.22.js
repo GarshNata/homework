@@ -25,8 +25,8 @@ function three(number, count) {
   }
   return number;
 }
-let number = prompt("Введите число:");
-let count = prompt("Введите количество добавлений:");
+let number = prompt("Enter the number:");
+let count = prompt("Enter the number of additions:");
 alert(three(+number, +count));
 
 
@@ -46,7 +46,7 @@ function getMetric(metric, km, m, cm) {
   return result;
 }
 let km = prompt("Enter value in kilometers:");
-let metric = prompt("Enter metric ('m' или 'cm'):");
+let metric = prompt("Enter metric ('m' or 'cm'):");
 let result = getMetric(metric, km, function(meters) {
   return meters;
 }, function(centimeters) {
